@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&family=Playfair+Display:wght@600;700&display=swap');
+@import 'tailwindcss';
+@config '../tailwind.config.ts';
+
+@theme inline {
+  --font-playfairDisplay: var(--font-playfair-display);
+  --font-cinzelDecorative: var(--font-cinzel-decorative);
+}
+
+:root {
+  --font-playfair-display: 'Playfair Display', serif;
+  --font-cinzel-decorative: 'Cinzel Decorative', serif;
+}
