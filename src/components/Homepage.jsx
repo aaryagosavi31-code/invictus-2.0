@@ -1,10 +1,9 @@
-import React from "react";
 import heroBg from "../assets/hero-bg.png";
 import Register from "./register";
 import ContactUs from "./ContactUs";
 import FAQ from "./FAQ";
 
-export default function Homepage() {
+export default function Homepage({ children }) {
   return (
     <main className="homepage">
       <div
@@ -14,6 +13,7 @@ export default function Homepage() {
       />
       <Hero />
       <Register />
+      {children}
       <FAQ />
       <ContactUs />
       <style>{`

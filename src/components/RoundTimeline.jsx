@@ -6,30 +6,21 @@ import {
 
 export default function EventPanel({
   event,
+  scrollOnMount = true,
 }) {
   const panelRef = useRef(null);
 
   const [activeRound, setActiveRound] =
     useState(0);
 
-  /*
-   * Reset timeline whenever another
-   * event is selected.
-   */
   useEffect(() => {
-    setActiveRound(0);
-
-    /*
-     * Put the user at the beginning
-     * of the newly selected timeline.
-     */
-    if (panelRef.current) {
+    if (scrollOnMount && panelRef.current) {
       panelRef.current.scrollIntoView({
         behavior: "smooth",
         block: "start",
       });
     }
-  }, [event?.id]);
+  }, [event?.id, scrollOnMount]);
 
 
   /*
