@@ -30,7 +30,7 @@ export default function Homepage({ children }) {
           inset: 0;
           background-position: center;
           background-size: cover;
-          filter: brightness(0.4) saturate(0.85);
+          filter: brightness(0.7) saturate(0.85);
           transform: scale(1.04);
           pointer-events: none;
         }

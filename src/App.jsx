@@ -14,15 +14,13 @@ function Timeline() {
   const activeEvent = eventsData.find((event) => event.id === activeId) ?? initialEvent
 
   return (
-    <main className="page-shell">
-      <div className="art-layer" aria-hidden="true" />
-
+    <main className='bg-[#16120e]/90 border border-[#d4af37]/35 ml-8 mr-8'>
       <section className="timeline-hero" id="timeline">
-        <div className="eyebrow"><span /> THE AGE OF LEGENDS <span /></div>
-        <h1>TIMELINE</h1>
-        <p className="hero-subtitle">THE JOURNEY OF CHAMPIONS</p>
+        <div className="eyebrow p-3"><span /> THE AGE OF LEGENDS <span /></div>
+        <h1 className='text-center'>TIMELINE</h1>
+        <p className="hero-subtitle text-center">THE JOURNEY OF CHAMPIONS</p>
         <div className="ornament"><i /><b>✦</b><i /></div>
-        <p className="hero-copy">Three legendary events. Countless trials. One path to glory.</p>
+        <p className="hero-copy text-center p-4">Three legendary events. Countless trials. One path to glory.</p>
       </section>
 
       <EventTabs events={eventsData} activeId={activeId} onChange={setActiveId} />
