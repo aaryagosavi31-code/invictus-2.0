@@ -85,17 +85,6 @@ function Hero() {
 
         /* darkens specifically behind the text column, since the archway
            and clouds there are brighter than the rest of the image */
-        .hero__vignette {
-          position: absolute;
-          inset: 0;
-          background: radial-gradient(
-            ellipse 55% 65% at 50% 48%,
-            rgba(10, 6, 3, 0.55) 0%,
-            rgba(10, 6, 3, 0.25) 55%,
-            rgba(10, 6, 3, 0) 80%
-          );
-        }
-
         .hero__content {
           position: relative;
           z-index: 1;

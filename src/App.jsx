@@ -16,7 +16,6 @@ function Timeline() {
   return (
     <main className="page-shell">
       <div className="art-layer" aria-hidden="true" />
-      <div className="vignette" aria-hidden="true" />
 
       <section className="timeline-hero" id="timeline">
         <div className="eyebrow"><span /> THE AGE OF LEGENDS <span /></div>

@@ -36,7 +36,6 @@ a { color: inherit; text-decoration: none; }
 
 .page-shell { position: relative; min-height: 100vh; overflow: hidden; background: #0a0807; }
 .art-layer { position: fixed; inset: 0; z-index: 0; background: url('/src/assets/timeline-bg.png') center top / cover no-repeat; opacity: .95; filter: saturate(.88) contrast(1.2); }
-.vignette { position: fixed; inset: 0; z-index: 1; pointer-events: none; background: radial-gradient(ellipse at 50% 27%, transparent 0%, rgba(5,4,3,.2) 48%, rgba(4,3,2,.94) 100%), linear-gradient(180deg, rgba(2,2,2,.26), #080706 92%); }
 .site-header, .hero, .tabs, .event-tabs, .event-overview, .timeline-panel, .panel, .footer { position: relative; z-index: 2; }
 
 .site-header { width: min(1180px, calc(100% - 56px)); margin: 0 auto; height: 82px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(193, 140, 42, .18); }
