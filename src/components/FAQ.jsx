@@ -57,7 +57,7 @@ export default function InvictusFAQ() {
       id="faq"
       className="min-h-screen text-[#ede4d1] font-['Libre_Baskerville',serif] flex justify-center items-center px-4 py-14 bg-[radial-gradient(circle_at_50%_15%,rgba(212,175,55,0.12),transparent_60%),radial-gradient(circle_at_50%_85%,rgba(45,30,15,0.5),transparent_70%)]"
     >
-      <div className="w-full max-w-[820px] bg-[#16120e]/90 border border-[#d4af37]/35 rounded-sm p-6 sm:p-12 shadow-[0_10px_40px_rgba(0,0,0,0.8),inset_0_0_40px_rgba(0,0,0,0.6)] backdrop-blur-md">
+      <div className="w-full max-w-205 bg-[#16120e]/90 border border-[#d4af37]/35 rounded-sm p-6 sm:p-12 shadow-[0_10px_40px_rgba(0,0,0,0.8),inset_0_0_40px_rgba(0,0,0,0.6)] backdrop-blur-md">
         
         {/* ================= HEADER ================= */}
         <header className="text-center mb-6">
@@ -69,9 +69,9 @@ export default function InvictusFAQ() {
           </p>
 
           <div className="flex items-center justify-center mt-4">
-            <span className="h-px flex-1 max-w-[140px] bg-gradient-to-r from-transparent to-[#d4af37]/35" />
+            <span className="h-px flex-1 max-w-35 bg-linear-to-r from-transparent to-[#d4af37]/35" />
             <span className="mx-3.5 text-lg text-[#d4af37]">🏛</span>
-            <span className="h-px flex-1 max-w-[140px] bg-gradient-to-l from-transparent to-[#d4af37]/35" />
+            <span className="h-px flex-1 max-w-35 bg-linear-to-l from-transparent to-[#d4af37]/35" />
           </div>
         </header>
 
@@ -80,7 +80,7 @@ export default function InvictusFAQ() {
           DECREES OF OLYMPUS — FREQUENTLY ASKED QUESTIONS
         </div>
 
-        <p className="text-center text-sm sm:text-base text-[#b8ab96] leading-relaxed max-w-[620px] mx-auto mb-9 italic">
+        <p className="text-center text-sm sm:text-base text-[#b8ab96] leading-relaxed max-w-155 mx-auto mb-9 italic">
           Before taking the arena at INVICTUS 2.0, seek the council of the Agora.
           Tap any query to consult the philosophers and deities.
         </p>
@@ -107,7 +107,7 @@ export default function InvictusFAQ() {
                   className="w-full flex justify-between items-center px-5 py-4 text-left cursor-pointer"
                 >
                   <span className="flex items-center gap-3 sm:gap-4 pr-3">
-                    <span className="font-cinzel text-base font-bold text-[#d4af37] min-w-[28px]">
+                    <span className="font-cinzel text-base font-bold text-[#d4af37] min-w-7">
                       {ROMAN_NUMERALS[index] || index + 1}
                     </span>
                     <span className="font-cinzel text-sm sm:text-base tracking-[0.8px] text-[#ede4d1]">
@@ -168,7 +168,7 @@ export default function InvictusFAQ() {
         {/* ================= FOOTER ================= */}
         <footer className="text-center mt-10">
           <div className="text-[#d4af37] text-lg tracking-[8px] mb-1">
-            𐡸 🏛 𐡹
+             🏛 
           </div>
           <p className="font-cinzel text-xs sm:text-sm tracking-[2px] text-[#997f3d]">
             #eXpressToInspire
