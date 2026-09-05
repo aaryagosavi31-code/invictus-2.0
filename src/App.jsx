@@ -2,14 +2,16 @@ import './App.css'
 import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom'
 import Homepage from './components/Homepage'
 import Navbar from './components/Navbar'
+import FAQ from './components/FAQ'
 
-function AppLayout() {
-	return (
-		<>
-			<Navbar />
-			<Outlet />
-		</>
-	)
+function App() {
+  return (
+    <>
+  <Register />
+  <ContactUs />
+  <FAQ/>
+  </>
+  )
 }
 
 function App(){
