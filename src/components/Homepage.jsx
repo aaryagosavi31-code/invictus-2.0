@@ -1,7 +1,7 @@
 import heroBg from "../assets/hero-bg.png";
-import Register from "./register";
+import Register from "./Register";
 import ContactUs from "./ContactUs";
-import FAQ from "./FAQ";
+import FAQ from "./FAQ"
 
 export default function Homepage({ children }) {
   return (
