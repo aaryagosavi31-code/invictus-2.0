@@ -1,13 +1,14 @@
 import { useState } from 'react'
 import './App.css'
-import ContactUs from './components/ContactUs'
+import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom'
+import Homepage from './components/Homepage'
 import EventTabs from './components/EventTabs'
 import Register from './components/register'
 import EventPanel from './components/RoundTimeline'
 import eventsData from './data/events.js'
 
 const initialEvent = eventsData[0]
-import FAQ from './components/FAQ'
+import Navbar from './components/Navbar'
 
 function App() {
   const [activeId, setActiveId] = useState(initialEvent?.id)
@@ -42,6 +43,21 @@ function App() {
     <FAQ />
   </>
   )
+}
+
+function App(){
+	const router = createBrowserRouter([
+		{
+			element: <AppLayout />,
+			children: [
+				{ path: "/", element: <Homepage /> },
+			]
+		}
+	])
+	
+	return (
+		<RouterProvider router={router} />
+	)
 }
 
 export default App

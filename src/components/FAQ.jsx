@@ -55,7 +55,7 @@ export default function InvictusFAQ() {
   return (
     <div
       id="faq"
-      className="min-h-screen bg-[#12100d] text-[#ede4d1] font-['Libre_Baskerville',serif] flex justify-center items-center px-4 py-14 bg-[radial-gradient(circle_at_50%_15%,rgba(212,175,55,0.12),transparent_60%),radial-gradient(circle_at_50%_85%,rgba(45,30,15,0.5),transparent_70%)]"
+      className="min-h-screen text-[#ede4d1] font-['Libre_Baskerville',serif] flex justify-center items-center px-4 py-14 bg-[radial-gradient(circle_at_50%_15%,rgba(212,175,55,0.12),transparent_60%),radial-gradient(circle_at_50%_85%,rgba(45,30,15,0.5),transparent_70%)]"
     >
       <div className="w-full max-w-[820px] bg-[#16120e]/90 border border-[#d4af37]/35 rounded-sm p-6 sm:p-12 shadow-[0_10px_40px_rgba(0,0,0,0.8),inset_0_0_40px_rgba(0,0,0,0.6)] backdrop-blur-md">
         

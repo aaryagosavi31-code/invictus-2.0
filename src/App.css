@@ -16,7 +16,6 @@
   max-height: calc(100svh - 64px);
   overflow: hidden;
   isolation: isolate;
-  background: #18130f;
 }
 
 .register-image,
