@@ -1,30 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
 
 const NAV_LINKS = [
   { href: "#home", label: "Home" },
   { href: "#registration", label: "Registration" },
+  { href: "#faq", label: "FAQs" },
   { href: "#contact", label: "Contact Us" },
 ];
-
-/* Small laurel-circle emblem, drawn in the same line style as the Hero's wreath */
-function Emblem() {
-  return (
-    <svg viewBox="0 0 48 48" className="navbar__emblem" aria-hidden="true">
-      <circle cx="24" cy="24" r="20" fill="none" />
-      <path d="M24 10 C14 12 9 22 12 32 C14 38 19 42 24 43" fill="none" />
-      <path d="M24 10 C34 12 39 22 36 32 C34 38 29 42 24 43" fill="none" />
-      {[...Array(4)].map((_, i) => (
-        <ellipse key={"l" + i} cx={13 + i * 0.6} cy={17 + i * 6} rx="3.6" ry="1.8"
-          transform={`rotate(${-40 + i * 6} ${13 + i * 0.6} ${17 + i * 6})`} />
-      ))}
-      {[...Array(4)].map((_, i) => (
-        <ellipse key={"r" + i} cx={35 - i * 0.6} cy={17 + i * 6} rx="3.6" ry="1.8"
-          transform={`rotate(${40 - i * 6} ${35 - i * 0.6} ${17 + i * 6})`} />
-      ))}
-    </svg>
-  );
-}
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -56,8 +37,7 @@ export default function Navbar() {
   return (
     <header className="navbar">
       <a href="#home" className="navbar__brand">
-        <Emblem />
-        <span className="navbar__brand-text">Invictus</span>
+        <span className="navbar__brand-text">Invictus 2.0</span>
       </a>
 
       <nav className="navbar__links">

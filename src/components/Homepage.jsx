@@ -2,6 +2,7 @@ import React from "react";
 import heroBg from "../assets/hero-bg.png";
 import Register from "./register";
 import ContactUs from "./ContactUs";
+import FAQ from "./FAQ";
 
 export default function Homepage() {
   return (
@@ -13,6 +14,7 @@ export default function Homepage() {
       />
       <Hero />
       <Register />
+      <FAQ />
       <ContactUs />
       <style>{`
         .homepage {
