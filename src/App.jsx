@@ -7,6 +7,7 @@ import EventPanel from './components/RoundTimeline'
 import eventsData from './data/events.js'
 
 const initialEvent = eventsData[0]
+import FAQ from './components/FAQ'
 
 function App() {
   const [activeId, setActiveId] = useState(initialEvent?.id)
@@ -38,7 +39,8 @@ function App() {
       </footer>
       </main>
       <ContactUs />
-    </>
+    <FAQ />
+  </>
   )
 }
 
