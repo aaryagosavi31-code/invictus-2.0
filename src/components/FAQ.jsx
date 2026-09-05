@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import aristotleImg from "../assets/images/aristotle.png";
 import athenaImg from "../assets/images/athena.png";
 import hermesImg from "../assets/images/hermes.png";

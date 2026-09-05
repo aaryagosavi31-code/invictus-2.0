@@ -37,7 +37,7 @@ function ContactPerson({ name, title, phone, href }) {
 
 function ContactUs() {
   return (
-    <main className="relative origin-center scale-[0.96] h-[100dvh] min-h-[620px] bg-[#100c08] text-[#f3e3bc]">
+    <main className="relative h-[100dvh] min-h-[620px] w-full bg-[#100c08] text-[#f3e3bc]">
    
       <div className="absolute inset-0 hidden bg-[url('./assets/contact-desktop.png')] bg-cover bg-center bg-no-repeat md:block" />
       <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(12,8,5,0.15),rgba(10,7,5,0.45)),url('./assets/contact-mobile.png')] bg-cover bg-center bg-no-repeat md:hidden" />
