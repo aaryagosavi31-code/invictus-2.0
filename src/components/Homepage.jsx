@@ -1,5 +1,5 @@
 import heroBg from "../assets/hero-bg.png";
-import Register from "./Register";
+import Register from "./register";
 import ContactUs from "./ContactUs";
 import FAQ from "./FAQ"
 
