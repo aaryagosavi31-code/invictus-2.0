@@ -2,6 +2,7 @@ import heroBg from "../assets/hero-bg.png";
 import Register from "./register";
 import ContactUs from "./ContactUs";
 import FAQ from "./FAQ"
+import PrizePool from "./PrizePool"
 
 export default function Homepage({ children }) {
   return (
@@ -14,13 +15,14 @@ export default function Homepage({ children }) {
       <Hero />
       <Register />
       {children}
+      <PrizePool />
       <FAQ />
       <ContactUs />
       <style>{`
         .homepage {
           position: relative;
           isolation: isolate;
-          overflow: hidden;
+          overflow: clip;
           background: #100c08;
         }
 

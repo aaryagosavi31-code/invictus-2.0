@@ -1,11 +1,13 @@
 const prHeads = [
   {
     name: "Nandish Vyas",
-    phone: "+91 70399 66655"
+    phone: "+91 70399 66655",
+    href: "tel:+917039966655"
   },
   {
     name: "Lavisha Boliya",
-    phone: "+91 93244 68782"
+    phone: "+91 93244 68782",
+    href: "tel:+919324468782"
   }
 ];
 
@@ -18,9 +20,11 @@ function ContactPerson({ name, title, phone, href }) {
         {name}
       </h3>
 
-      <p className="mt-[clamp(1px,0.3vh,4px)] font-cinzel text-[clamp(7px,0.65vw,11px)] uppercase tracking-[0.16em] text-[#d2a452]">
-        {title}
-      </p>
+      {title && (
+        <p className="mt-[clamp(1px,0.3vh,4px)] font-cinzel text-[clamp(7px,0.65vw,11px)] uppercase tracking-[0.16em] text-[#d2a452]">
+          {title}
+        </p>
+      )}
 
       <a
         href={href}
@@ -58,10 +62,10 @@ function ContactUs() {
           </p>
         </header>
 
-        <section className="max-md:bg-linear-to-t from-black/30 to-black/0 grid min-h-0 flex-1 grid-cols-1 pb-[clamp(34px,6vh,90px)] pt-[clamp(16px,2.4vh,34px)] md:grid-cols-[0.4fr_0.4fr] md:justify-center md:items-stretch">
+        <section className="max-md:bg-linear-to-t from-black/30 to-black/0 grid min-h-0 flex-1 grid-cols-1 pb-[clamp(34px,6vh,90px)] pt-[clamp(16px,2.4vh,34px)] md:grid-cols-[72vh_72vh] md:justify-center md:items-stretch md:translate-x-[1.5vh]">
 
           {/* LEFT BOX */}
-          <div className="relative flex min-h-0 flex-col justify-center py-[clamp(14px,2vh,30px)]">
+          <div className="relative flex min-h-0 flex-col justify-center py-[clamp(14px,2vh,30px)] md:translate-y-[3vh]">
             <div className="absolute inset-x-[5%] top-0 h-px bg-[#d2a452]/20 md:hidden" />
 
             <div className="mb-[clamp(10px,2vh,24px)] text-center">
@@ -81,8 +85,8 @@ function ContactUs() {
           </div>
 
           {/* RIGHT BOX */}
-          <div className="relative flex min-h-0 flex-col justify-center md:-mt-9.5">
-            <div className="mb-[clamp(18px,3vh,42px)] text-center">
+          <div className="relative flex min-h-0 flex-col justify-center md:translate-y-[3vh]">
+            <div className="mb-[clamp(18px,3vh,42px)] text-center md:-translate-y-[3vh]">
               <p className="font-cinzel text-[clamp(10px,0.7vw,12px)] tracking-[0.2em] text-[#ecc88b]">
                 THE ARCHON
               </p>
@@ -93,6 +97,7 @@ function ContactUs() {
             <ContactPerson
               name="Dhruv Thakur"
               phone="+91 90763 17135"
+              href="tel:+919076317135"
             />
 
             <div className="mx-auto mt-[clamp(16px,3vh,42px)] w-full max-w-[340px] border-t border-[#d2a452]/25 pt-[clamp(10px,1.5vh,18px)] text-center">
@@ -107,9 +112,9 @@ function ContactUs() {
         </section>
         
       </div>
-      <h1 className="hidden md:block md:absolute bottom-2 left-1/3 text-[#513206]">
+      <p className="hidden md:block md:absolute bottom-2 left-1/3 text-[#513206]">
             LEGENDS AREN'T BORN, THEY ARE SUMMONED
-      </h1>
+      </p>
     </main>
   );
 }
