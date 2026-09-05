@@ -107,7 +107,7 @@ function ContactUs() {
         </section>
         
       </div>
-      <h1 className="hidden md:block md:absolute bottom-7 left-1/3 text-[#513206]">
+      <h1 className="hidden md:block md:absolute bottom-8 left-1/3 text-[#513206]">
             LEGENDS AREN'T BORN, THEY ARE SUMMONED
       </h1>
     </main>

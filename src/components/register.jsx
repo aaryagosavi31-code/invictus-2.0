@@ -2,7 +2,7 @@ import image2 from '../assets/Image2.png'
 
 export default function Register() {
   return (
-    <main className="register-page">
+    <main id="registration" className="register-page">
       <div className="register-card">
       <img
         src={image2}
