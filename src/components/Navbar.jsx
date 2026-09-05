@@ -3,6 +3,8 @@ import React, { useEffect, useRef, useState } from "react";
 const NAV_LINKS = [
   { href: "#home", label: "Home" },
   { href: "#registration", label: "Registration" },
+  { href: "#timeline", label: "Timeline" },
+  { href: "#prizepool", label: "Prizepool" },
   { href: "#faq", label: "FAQs" },
   { href: "#contact", label: "Contact Us" },
 ];
