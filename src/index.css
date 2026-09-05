@@ -1,11 +1,12 @@
 @import './globals.css';
 
 body {
-  margin: 0;
   min-width: 320px;
-  background: #000;
+  background: #100c08;
+  font-family: "Libre Baskerville", Georgia, serif;
 }
 
 #root {
   min-height: 100svh;
 }
+
