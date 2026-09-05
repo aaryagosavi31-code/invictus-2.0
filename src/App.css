@@ -1,4 +1,6 @@
 .register-page {
+  position: relative;
+  z-index: 3;
   min-height: 100svh;
   display: grid;
   place-items: center;
