@@ -87,18 +87,18 @@ const responsiveCSS = `
 
 const styles = {
   page: {
-    minHeight: '100vh',
+    minHeight: '100svh',
     width: '100%',
     display: 'flex',
-    alignItems: 'center',
+    alignItems: 'stretch',
     justifyContent: 'center',
     backgroundColor: '#000',
   },
   card: {
     position: 'relative',
     width: '100%',
-    maxWidth: '480px',
-    minHeight: '600px',
+    maxWidth: 'none',
+    minHeight: '100svh',
     overflow: 'hidden',
     backgroundColor: '#1a1a1a', // fallback so the card is visible even if an image fails
   },
