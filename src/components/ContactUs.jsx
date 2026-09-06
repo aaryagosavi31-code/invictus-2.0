@@ -43,7 +43,7 @@ function ContactUs() {
   return (
     <main className="relative h-[100dvh] min-h-[620px] w-full bg-[#100c08] text-[#f3e3bc]">
    
-      <div className="absolute inset-0 hidden bg-[url('./assets/contact-desktop.png')] bg-cover bg-center bg-no-repeat md:block" />
+      <div className="absolute inset-0 brightness-85 hidden bg-[url('./assets/contact-desktop.png')] bg-cover bg-center bg-no-repeat md:block" />
       <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(12,8,5,0.15),rgba(10,7,5,0.45)),url('./assets/contact-mobile.png')] bg-cover bg-center bg-no-repeat md:hidden" />
       <div className="pointer-events-none absolute inset-0 bg-black/10" />
 
@@ -65,7 +65,7 @@ function ContactUs() {
         <section className="max-md:bg-linear-to-t from-black/30 to-black/0 grid min-h-0 flex-1 grid-cols-1 pb-[clamp(34px,6vh,90px)] pt-[clamp(16px,2.4vh,34px)] md:grid-cols-[72vh_72vh] md:justify-center md:items-stretch md:translate-x-[1.5vh]">
 
           {/* LEFT BOX */}
-          <div className="relative flex min-h-0 flex-col justify-center py-[clamp(14px,2vh,30px)] md:translate-y-[3vh]">
+          <div className="relative flex min-h-0 flex-col justify-center py-[clamp(14px,2vh,30px)]">
             <div className="absolute inset-x-[5%] top-0 h-px bg-[#d2a452]/20 md:hidden" />
 
             <div className="mb-[clamp(10px,2vh,24px)] text-center">
@@ -85,7 +85,7 @@ function ContactUs() {
           </div>
 
           {/* RIGHT BOX */}
-          <div className="relative flex min-h-0 flex-col justify-center md:translate-y-[3vh]">
+          <div className="relative flex min-h-0 flex-col justify-center">
             <div className="mb-[clamp(18px,3vh,42px)] text-center md:-translate-y-[3vh]">
               <p className="font-cinzel text-[clamp(10px,0.7vw,12px)] tracking-[0.2em] text-[#ecc88b]">
                 THE ARCHON
@@ -112,7 +112,7 @@ function ContactUs() {
         </section>
         
       </div>
-      <p className="hidden md:block md:absolute bottom-2 left-1/3 text-[#513206]">
+      <p className="hidden md:block md:absolute bottom-7 left-1/3 text-[#321e03]">
             LEGENDS AREN'T BORN, THEY ARE SUMMONED
       </p>
     </main>
